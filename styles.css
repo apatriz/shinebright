@@ -1,10 +1,13 @@
+.mdl-layout{
+	background-color:#282828;
+	color:#FFFFFF;
+}
 .portfolio-header {
   position: relative;
-  /*background-color: #D8D8D8;*/
-  background-image: url(images/header-background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  height:200px;
+  background-color: transparent;
+/*   background-image: url(images/logo-dark-background.png); */
+/*   background-repeat: no-repeat;
+  background-position: center; */
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -12,5 +15,17 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height:100%;
 }
-
+.portfolio-logo{
+	background-image:url(images/mini-logo-border.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	height: 170px;
+	width:170px;
+	margin:10px;
+}
+.mdl-layout__title{
+	text-align:center;
+	padding-top:10px;
+}
