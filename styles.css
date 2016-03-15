@@ -17,7 +17,7 @@
 /*   background-image: url(images/logo-dark-background.png); */
 /*   background-repeat: no-repeat;
   background-position: center; */
-  height:50%;
+  height:60%;
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -25,7 +25,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height:75%;
+  height:100%;
 }
 .mdl-layout__title{
 	text-align:center;
@@ -42,15 +42,17 @@
 	background-repeat:no-repeat;
 	background-position: center;
 	background-size:contain;
-	max-height: 170px;
-	min-height: 50px;
+	max-height: 200px;
 	max-width:600px;
-	min-width:250px;
 	height:100%;
 	width:100%;
 	margin:auto;
 }
-.portfolio-navigation-row{
-	height:25%;
+@media screen and (max-width: 1024px){
+  .header-logo{
+    height:100px;
+    width: 350px;
+  }
 }
+
 
