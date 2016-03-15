@@ -1,10 +1,19 @@
-.mdl-layout{
-	background-color:#282828;
+.vid-background{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background:url(videos/blurry-night.jpg);
+  background-size: cover;
+  z-index:0;
+  position: absolute;
+  bottom:0;
+}
+.mini-layout{
 	color:#FFFFFF;
 }
 .portfolio-header {
   position: relative;
-  background-color: transparent;
 /*   background-image: url(images/logo-dark-background.png); */
 /*   background-repeat: no-repeat;
   background-position: center; */
@@ -18,11 +27,11 @@
   height:100%;
 }
 .portfolio-logo{
-	background-image:url(images/mini-logo-border.png);
+	background-image:url(images/logo-dark.png);
 	background-repeat:no-repeat;
-	background-size:cover;
+	/*background-size:cover;*/
 	height: 170px;
-	width:170px;
+	width:600px;
 	margin:10px;
 }
 .mdl-layout__title{
