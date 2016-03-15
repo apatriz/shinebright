@@ -17,6 +17,7 @@
 /*   background-image: url(images/logo-dark-background.png); */
 /*   background-repeat: no-repeat;
   background-position: center; */
+  height:50%;
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -24,17 +25,30 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height:100%;
-}
-.portfolio-logo{
-	background-image:url(images/logo-dark.png);
-	background-repeat:no-repeat;
-	/*background-size:cover;*/
-	height: 170px;
-	width:600px;
-	margin:10px;
+  height:75%;
 }
 .mdl-layout__title{
 	text-align:center;
-	padding-top:10px;
 }
+.logo-box{
+	padding-top:10px;
+	height:50%;
+	width:100%;
+	margin:auto;
+	margin-bottom:0;
+}
+.header-logo{
+	background-image:url(images/logo-dark.png);
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size:contain;
+	max-height: 170px;
+	max-width:600px;
+	height:100%;
+	width:100%;
+	margin:auto;
+}
+.portfolio-navigation-row{
+	height:25%;
+}
+
