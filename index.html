@@ -57,17 +57,27 @@
         <main class="mdl-layout__content">
 		<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
 				<div class="mdl-tabs__tab-bar">
-					<a href="#tab1-panel" class="mdl-tabs__tab">About</a>
-					<a href="#tab2-panel" class="mdl-tabs__tab">Contact</a>
+					<a id="about-tab" href="#about-panel" class="mdl-tabs__tab">About</a>
+					<a id="contact-tab" href="#contact-panel" class="mdl-tabs__tab">Contact</a>
+                            <a id="resume-tab" href="#resume-panel" class="mdl-tabs__tab">Resum&eacute;</a>
 				</div>
-				<div class="mdl-tabs__panel" id="tab1-panel">
-					<p>Shine bright like a diamond</p>
+				<div class="mdl-tabs__panel" id="about-panel">
+                            <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--6-col">picture of me</div>
+                                <div class="mdl-cell mdl-cell--6-col"> a little blurb about me </div>
+
+
+
+                            </div>
 				</div>
-				<div class="mdl-tabs__panel" id="tab2-panel">
+				<div class="mdl-tabs__panel" id="contact-panel">
 					<p>Diamonds in the sky</p>
 				</div>
-			
-		</div>	         
+                      <div class="mdl-tabs__panel" id="resume-panel">
+                        <p>This is my resume</p>
+                      </div>
+
+		</div>
         </main>
 	</div>
 
