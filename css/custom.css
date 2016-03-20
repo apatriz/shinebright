@@ -3,7 +3,7 @@
   min-height: 100%;
   width: auto;
   height: auto;
-  background:url(videos/blurry-night.jpg);
+  background:url(../videos/blurry-night.jpg);
   background-size: cover;
   z-index:0;
   position: absolute;
@@ -41,7 +41,7 @@
 	margin-bottom:0;
 }
 .header-logo{
-	background-image:url(images/logo-dark.png);
+	background-image:url(../images/logo-dark.png);
 	background-repeat:no-repeat;
 	background-position: center;
 	background-size:contain;
