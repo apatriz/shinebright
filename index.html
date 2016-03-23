@@ -26,35 +26,56 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images\alt-favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/alt-favicon.ico">
 </head>
 
 <body>
-      <video class="vid-background" autoplay loop poster="videos/blurry-night.jpg">
+	<div class="fullscreen-bg">
+      <video class="fullscreen-bg__video" autoplay loop poster="videos/blurry-night.jpg">
         <source src="videos/blurry-night.mp4" />
         <source src="videos/blurry-night.webm" />
         <source src="videos/blurry-night.ogv" />
       </video>
-	  <div class="mini-layout container">
-		 <div class="divider"></div>
-		  <div class="section">
-			<h5>Section 1</h5>
-			<p>Stuff</p>
+	</div>
+	  <div class="mini-layout">
+		<div class="container header">
+			<div class="logo-container valign-wrapper">
+				<div class="header-logo"></div>
+			</div>
+		</div>  
+		  <div class="container">		 
+			  <div class="row">
+				<div class="col s12 center">
+					<h4>About</h4>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col s12 m4 center">
+					<img class="circle responsive-img" src="images/mini-logo-border.png"/>
+				</div>
+				<div class="col s12 m8">
+					<p class="flow-text">Lorem ipsum dolor sit amet, ei sint scripserit usu, mel volumus imperdiet in, 
+					sea cu debitis philosophia. Vim choro lobortis volutpat cu, esse populo viderer ut has. Menandri patrioque no duo. 
+					Est ea quaeque saperet. Vix ei melius tibique, sumo esse voluptua ad est.
+					Sit ex tollit oporteat, pri ea iudico apeirian legendos. Ad labore audire ius. Ut sint fabulas pro. 
+					Duo quidam minimum suscipit te. Stet choro sententiae ei cum. Est malis causae ad, eu tollit ornatus laoreet sit, 
+					mel everti accusata molestiae ne. Sed quis conceptam voluptatibus ad, qui exerci eleifend signiferumque id, 
+					ex habeo dictas oporteat cum.</p>
+				</div>		
+			  </div>
+			  <div class="divider"></div>
+			  <div class="section">
+				<h4>Resum&eacute;</h4>
+				<p>Stuff</p>
+			  </div>
+			  <div class="divider"></div>
+			  <div class="section">
+				<h4>Contact</h4>
+				<p>Stuff</p>
+			  </div>	  
 		  </div>
-		  <div class="divider"></div>
-		  <div class="section">
-			<h5>Section 2</h5>
-			<p>Stuff</p>
-		  </div>
-		  <div class="divider"></div>
-		  <div class="section">
-			<h5>Section 3</h5>
-			<p>Stuff</p>
-		  </div>	  
-	  </div>
-	  
-
-        
+	</div>
+	         
 
 	  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>

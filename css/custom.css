@@ -1,42 +1,45 @@
-.vid-background{
-  min-width: 100%;
-  min-height: 100%;
+.fullscreen-bg{
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	z-index:-100;
+}
+.fullscreen-bg__video{
+  position: absolute;
+  top:50%;
+  left:50%;
   width: auto;
   height: auto;
-  background:url(../videos/blurry-night.jpg);
-  background-size: cover;
-  z-index:0;
-  position: absolute;
-  bottom:0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 }
+
+
+
+@media (max-width: 767px){
+	.fullscreen-bg{
+		background:url(../videos/blurry-night.jpg) center center / cover no-repeat;
+	}
+	.fullscreen-bg__video{
+		display:none;
+	}
+}
+
 .mini-layout{
 	color:#FFFFFF;
 	z-index:100;
+	position:relative;
+	
 }
-
-.portfolio-header {
-  position: relative;
-/*   background-image: url(images/logo-dark-background.png); */
-/*   background-repeat: no-repeat;
-  background-position: center; */
-  height:50%;
-  margin-bottom:10px;
-}
-
-.portfolio-header .mdl-layout__header-row {
-  padding: 0;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height:100%;
-}
-.mdl-layout__title{
-	text-align:center;
-}
-.logo-box{
+.logo-container{
 	padding-top:10px;
-	/*height:100%;*/
-	width:100%;
 	margin:auto;
 	margin-bottom:0;
 }
@@ -47,46 +50,10 @@
 	background-size:contain;
 	height: 200px;
 	width:600px;
-/*	height:100%;
-	width:100%;*/
 	margin:auto;
 }
-@media screen and (max-width: 1024px){
-  .header-logo{
-    height:100px;
-    width: 350px;
-  }
-  .portfolio-header{
-	  height:25%;
-  }
-}
-.mdl-layout__content{
-	margin-top:10px;
-}
-.mdl-tabs__tab-bar{
-	border-bottom:none;
-}
-.mdl-tabs__tab-bar > a{
-	color:#FFFFFF !important;
-      border-style: solid;
-      border-color: white;
-      border-width: 0 3px;
-}
-.mdl-tabs__tab-bar > a:hover{
-  background-color: rgba(104,59,183,0.4);
-  /*background-color: rgba(225,0,210,0.2);*/
-}
 
 
-.mdl-tabs__tab-bar .is-active{
-	/* border:1px solid white; */
-	background-color: rgba(104,59,183,0.2);
-      /*border-color: #683BB7;*/
-
-}
-.mdl-tabs__panel{
-	margin-top:50px;
-}
 
 
 
