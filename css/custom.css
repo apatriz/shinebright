@@ -36,7 +36,7 @@
 	color:#FFFFFF;
 	z-index:100;
 	position:relative;
-	
+
 }
 .logo-container{
 	padding-top:10px;
@@ -53,7 +53,10 @@
 	margin:auto;
 }
 
-
+.input-field{
+  margin-top:20px;
+  margin-bottom: 20px;
+}
 
 
 
