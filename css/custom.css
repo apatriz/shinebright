@@ -21,8 +21,6 @@
 		transform: translate(-50%, -50%);
 }
 
-
-
 @media (max-width: 767px){
 	.fullscreen-bg{
 		background:url(../videos/blurry-night.jpg) center center / cover no-repeat;
@@ -54,9 +52,47 @@
 }
 
 .input-field{
-  margin-top:20px;
   margin-bottom: 20px;
 }
+
+/* Form Color */
+
+/* label color */
+.contact-input label {
+ color: white;
+}
+/* label focus color */
+.contact-input input[type=text]:focus + label,
+.contact-input input[type=email]:focus + label,
+.contact-input textarea[id=message]:focus + label {
+ color: #D1C4E9;
+}
+/* label underline focus color */
+.contact-input input[type=text]:focus ,
+.contact-input input[type=email]:focus,
+.contact-input textarea[id=message]:focus{
+ border-bottom: 1px solid #D1C4E9;
+ box-shadow: 0 1px 0 0 #D1C4E9;
+}
+/* valid color */
+.contact-input input[type=text].valid,
+.contact-input input[type=email].valid ,
+.contact-input textarea[id=message].valid{
+ border-bottom: 1px solid #E040FB;
+ box-shadow: 0 1px 0 0 #E040FB;
+}
+/* invalid color */
+.contact-input input[type=text].invalid,
+.contact-input input[type=email].invalid ,
+.contact-input textarea[id=message].invalid{
+ border-bottom: 1px solid #D32F2F;
+ box-shadow: 0 1px 0 0 #D32F2F;
+}
+/* icon prefix focus color */
+.contact-input .prefix.active {
+ color: #D1C4E9;
+}
+        
 
 
 
