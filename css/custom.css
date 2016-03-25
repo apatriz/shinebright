@@ -90,8 +90,17 @@
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
- color: #D1C4E9;
+	color: #7e57c2;
 }
+
+/* submit button */
+.input-field button[type=submit]{
+	background-color:#673ab7;
+}
+.input-field button[type=submit]:hover{
+	background-color:#9575cd;
+}
+
         
 
 
