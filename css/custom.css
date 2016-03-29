@@ -50,6 +50,10 @@
 	width:600px;
 	margin:auto;
 }
+#profile-pic{
+	max-width:85%;
+	height:auto;
+}
 
 .input-field{
   margin-bottom: 20px;
