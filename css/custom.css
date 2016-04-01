@@ -21,13 +21,16 @@
 		transform: translate(-50%, -50%);
 }
 
-@media (max-width: 767px){
+@media (max-width: 600px){
 	.fullscreen-bg{
 		background:url(../videos/blurry-night.jpg) center center / cover no-repeat;
 	}
 	.fullscreen-bg__video{
 		display:none;
 	}
+      #profile-pic{
+        max-width:80%;
+      }
 }
 
 .mini-layout{
@@ -49,10 +52,6 @@
 	height: 200px;
 	width:600px;
 	margin:auto;
-}
-#profile-pic{
-	max-width:85%;
-	height:auto;
 }
 
 .input-field{
@@ -105,7 +104,7 @@
 	background-color:#9575cd;
 }
 
-        
+
 
 
 
