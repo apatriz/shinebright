@@ -53,6 +53,9 @@
 	width:600px;
 	margin:auto;
 }
+.purple-text.accent-2{
+	color:#ea25ee !important;
+}
 
 .input-field{
   margin-bottom: 20px;
@@ -93,15 +96,17 @@
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
-	color: #7e57c2;
+	color: #ea25ee;
 }
 
 /* submit button */
 .input-field button[type=submit]{
-	background-color:#673ab7;
+	/* background-color:#673ab7; */
+	background-color:#bb0ebe;
 }
 .input-field button[type=submit]:hover{
-	background-color:#9575cd;
+	/* background-color:#9575cd; */
+	background-color:#e912ed;
 }
 
 
