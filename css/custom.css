@@ -109,6 +109,10 @@
 	background-color:#e912ed;
 }
 
+.details-list > li{
+    opacity:0;
+}
+
 
 
 
