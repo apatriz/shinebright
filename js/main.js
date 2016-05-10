@@ -1,8 +1,11 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
     var options = [
-        {selector: '.details-list', offset: 500, callback: 'Materialize.showStaggeredList(".details-list")'
-        }
+        {selector: '#work-experience', offset: 500, callback: 'Materialize.showStaggeredList("#work-experience")'}
+
+        
     ];
     Materialize.scrollFire(options);
+    
+  
 });

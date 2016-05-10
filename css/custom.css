@@ -113,7 +113,9 @@
     opacity:0;
 }
 
-
+.collapsible-header{
+    background: transparent;
+}
 
 
 
