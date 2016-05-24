@@ -1,20 +1,5 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
 <html lang="en">
 
 <head>
@@ -23,60 +8,255 @@
     <meta name="description" content="A portfolio template that uses Material Design Lite.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shine Bright Like a Diamond</title>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-    <link type= "text/css" rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.deep_purple-purple.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images\alt-favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/alt-favicon.ico"/>
 </head>
 
 <body>
-      <video class="vid-background" autoplay loop poster="videos/blurry-night.jpg">
+
+  <div class="fullscreen-bg">
+      <video class="fullscreen-bg__video" autoplay loop poster="videos/blurry-night.jpg">
         <source src="videos/blurry-night.mp4" />
         <source src="videos/blurry-night.webm" />
         <source src="videos/blurry-night.ogv" />
       </video>
-      <div class="mini-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  </div>
 
-        <header class="mdl-layout__header mdl-layout__header--transparent portfolio-header">
-            <div class="mdl-layout__header-row">
-                 <span class="mdl-layout__title logo-box">
-				 <div class="header-logo"></div>
-                 </span>
-            </div>
+  <div class="mini-layout">
+    <div class="container header">
+      <div class="logo-container valign-wrapper">
+        <div class="header-logo"></div>
+      </div>
+    </div>
 
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <span class="mdl-layout__title">Mili Zhang</span>
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link" href="#">About</a>
-                <a class="mdl-navigation__link" href="#">Contact</a>
-				<a class="mdl-navigation__link" href="#">Resum&eacute;</a>
-            </nav>
+    <div class="container">
+
+      <div class="section">
+        <h4 class="center">About Me</h4>
+        <div class="row">
+          <div class="col s12 m4 center">
+            <img id="profile-pic" class="circle responsive-img" src="images/mini.jpg"/>
+          </div>
+          <div class="col s12 m8">
+            <p class="flow-text">I was born in Chongqing Province, in the south of China and then moved
+            to Beijing for my undergrad. A few years later I continued pursuing my education by joining
+            the Masters program in HRLR at Michigan State University. In my spare time,
+            I like watching good movies(rated 8.5/10.0 and above!), singing karaoke, traveling and dancing.
+            I have a natural passion for business and I very much enjoy challenges and learning. At work,
+            I am results-oriented and an achiever, while my cultural background has taught me people
+            skills allowing me to easily see other’s perspectives.</p>
+          </div>
         </div>
-        <main class="mdl-layout__content">
-		<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-				<div class="mdl-tabs__tab-bar">
-					<a id="about-tab" href="#about-panel" class="mdl-tabs__tab">About</a>
-					<a id="contact-tab" href="#contact-panel" class="mdl-tabs__tab">Contact</a>
-                            <a id="resume-tab" href="#resume-panel" class="mdl-tabs__tab">Resum&eacute;</a>
-				</div>
-				<div class="mdl-tabs__panel" id="about-panel">
-                            <div class="mdl-grid">
-                                <div class="mdl-cell mdl-cell--6-col">picture of me</div>
-                                <div class="mdl-cell mdl-cell--6-col"> a little blurb about me </div>
-                            </div>
-				</div>
-				<div class="mdl-tabs__panel" id="contact-panel">
-					<p>Diamonds in the sky</p>
-				</div>
-                      <div class="mdl-tabs__panel" id="resume-panel">
-                        <p>This is my resume</p>
-                      </div>
+      </div>
+      
 
-		</div>
-        </main>
-	</div>
-    <script type="text/javascript" src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+      <div class="section">
+        
+          
+            <ul id="work-experience" class="details-list">
+            
+<!--            work 1-->
+            <li>
+                <div class="divider"></div>
+                <h4 class="center">Work Experience</h4>
+                <h5>HR Trax Intern/Compensation Consultant</h5>
+                  <h6>
+                    <i class="material-icons prefix purple-text accent-2">business</i>
+                    Microsoft
+                    <i class="material-icons prefix purple-text accent-2">place</i>
+                    Redmond, WA
+                    <i class="material-icons prefix purple-text accent-2">today</i>
+                    May - Aug 2015
+                  </h6>
+                <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">Achievements</div>
+                    <div class="collapsible-body">
+
+                          <p class="flow-text">Developed new guidelines, standardized processes, simplified toolkit and developed materials for Internal
+                          Transfer Bonus Program in FY16 at Microsoft, which will significantly reduce confusion and shorten the
+                              time to process transfer bonuses for Staffing Consultants.</p>
+                          <p class="flow-text">Analyzed and interpreted data, and communicated useful information and potential problems with
+                          SMS&amp;P leaders in regards to Performance and Development during the annual rewards period to ensure
+                          the pay for performance philosophy and that top rewards go to the highest impact individuals.</p>
+                          <p class="flow-text">Conducted a compensation survey by cooperating with an external consulting firm to benchmark and
+                          decide a compensation strategy for Microsoft Retail in FY17.</p>
+
+                    </div>
+                </li>
+                </ul>
+                
+            </li>
+<!--              work 2-->
+           
+
+            <li>
+              <h5>HR Consultant &amp; City Manager</h5>
+                    <h6>
+                      <i class="material-icons prefix purple-text accent-2">business</i>
+                      PXC HR Consulting
+                      <i class="material-icons prefix purple-text accent-2">place</i>
+                      Beijing, China
+                      <i class="material-icons prefix purple-text accent-2">today</i>
+                      Jan 2013 - Aug 2014
+                  </h6>
+                <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">Achievements</div>
+                    <div class="collapsible-body">
+
+                        <p class="flow-text">Analyzed legal, economic and political factors of some industries and
+                        provided industry research.</p>
+                        <p class="flow-text">Benchmarked human resource practices of our clients’ competitors using
+                        internal and external data.</p>
+                        <p class="flow-text">Completed over 80 job descriptions and simplified the organizational
+                        structure to increase efficiency.</p>
+                        <p class="flow-text">Conducted job evaluations and designed an executive Compensation &amp; Benefits
+                        system as well as a performance measurement system for a local real estate company.</p>
+                        <p class="flow-text">Served over 50 clients in Qingdao and sold out over 20 Remuneration Survey
+                         and HR Practice Reports.</p>
+                        <p class="flow-text">Organized a HR conference in Qingdao with over 300 participants.</p>
+                        <p class="flow-text">Developed a strong relationship with Qingdao government and local companies
+                        as marketing partners.</p>
+                    </div>
+                </li>
+                </ul>
+                  
+            </li>
+<!--work 3-->
+            <li>
+                <h5>Human Resource Intern</h5>
+                <h6>
+                    <i class="material-icons prefix purple-text accent-2">business</i>
+                    Amazon
+                    <i class="material-icons prefix purple-text accent-2">place</i>
+                    Beijing, China
+                    <i class="material-icons prefix purple-text accent-2">today</i>
+                    Nov 2011 - May 2012
+                </h6>
+                <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">Achievements</div>
+                    <div class="collapsible-body">
+                      <p class="flow-text">Led the campus recruitment of Amazon 2012 Management Rotation Program for northern China</p>
+                      <p class="flow-text">Recruited 8 entry-level staff and 1 managerial-level staff using different recruitment strategies</p>
+                    </div>
+                </li>
+                </ul>
+            </li>
+            
+            </ul>
+           </div>
+           
+      
+        <div class="section">
+            <ul id="education" class="details-list">
+                <li>
+                    <div class="divider"></div>
+                    <h4 class="center">Education</h4>
+                </li>
+                <li>
+                    <h5>Michigan State University</h5>
+                    <h6>
+                        <i class="material-icons prefix purple-text accent-2">today</i>
+                        May 2016
+                    </h6>
+                    <ul>
+                        <li class="flow-text">Master of Human Resources and Labor Relations</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Beijing Forestry University</h5>
+                    <h6>
+                        <i class="material-icons prefix purple-text accent-2">today</i>
+                        July 2013
+                    </h6>
+                    <ul>
+                        <li class="flow-text">Master of Science in Agriculture</li>
+                    </ul>
+                </li>     
+            </ul>
+        </div>
+        
+        
+        
+      
+        <div class="section">
+            <ul id="skills" class="details-list">
+                <li>
+                <div class="divider"></div>
+                <h4 class="center">Honors, Skills &amp; Activities</h4>
+                </li>
+                <li>
+                    <ul>
+                        <li class="flow-text">Vice president, International Students Association in Beijing Forestry University</li>
+                        <li class="flow-text">Recipient “Love Forestry” Reward</li>
+                        <li class="flow-text">Participant top 3% of Beijing Forestry University</li>
+                        <li class="flow-text">Bilingual: English and Chinese</li>
+                        <li class="flow-text">Volunteer Work: China Foundation for Poverty Alleviation’s 20th Anniversary Celebration, 2008 Olympic
+                        Games Preliminaries Competition, Mid-autumn Cultural Festival in Forbidden City, etc.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+      
+      <div class="section">
+        <ul id="contact" class="details-list">
+            <li>    
+                <div class="divider"></div>
+                <h4 class="center">Contact Me</h4>
+            </li>
+            <li>
+                <div class="row">
+                   <form method="post" action="https://formspree.io/alec.patrizio@gmail.com"class="col s12 m10 offset-m1"> 
+<!--                  <form method="post" action=""class="col s12 m10 offset-m1">-->
+
+                    <div class="row">
+                      <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="fullname" name="fullname" type="text" class="validate"/>
+                        <label for="fullname">What's Your Name?</label>
+                      </div>
+                      <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" name="email" type="email" class="validate"/>
+                        <label for="email" data-error="No!">Email Address?</label>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">comment</i>
+                        <textarea id="message" name="message" class="validate materialize-textarea"></textarea>
+                        <label for="message">Your Message?</label>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="center input-field col s12">
+                        <button class="btn waves-effect" type="submit" name="action">Submit
+                          <i class="material-icons right">send</i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+            </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

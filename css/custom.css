@@ -1,42 +1,46 @@
-.vid-background{
-  min-width: 100%;
-  min-height: 100%;
+.fullscreen-bg{
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	z-index:-100;
+}
+.fullscreen-bg__video{
+  position: absolute;
+  top:50%;
+  left:50%;
   width: auto;
   height: auto;
-  background:url(../videos/blurry-night.jpg);
-  background-size: cover;
-  z-index:0;
-  position: absolute;
-  bottom:0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 }
+
+@media (max-width: 600px){
+	.fullscreen-bg{
+		background:url(../videos/blurry-night.jpg) center center / cover no-repeat;
+	}
+	.fullscreen-bg__video{
+		display:none;
+	}
+      #profile-pic{
+        max-width:80%;
+      }
+}
+
 .mini-layout{
 	color:#FFFFFF;
 	z-index:100;
-}
+	position:relative;
 
-.portfolio-header {
-  position: relative;
-/*   background-image: url(images/logo-dark-background.png); */
-/*   background-repeat: no-repeat;
-  background-position: center; */
-  height:50%;
-  margin-bottom:10px;
 }
-
-.portfolio-header .mdl-layout__header-row {
-  padding: 0;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height:100%;
-}
-.mdl-layout__title{
-	text-align:center;
-}
-.logo-box{
+.logo-container{
 	padding-top:10px;
-	/*height:100%;*/
-	width:100%;
 	margin:auto;
 	margin-bottom:0;
 }
@@ -47,45 +51,70 @@
 	background-size:contain;
 	height: 200px;
 	width:600px;
-/*	height:100%;
-	width:100%;*/
 	margin:auto;
 }
-@media screen and (max-width: 1024px){
-  .header-logo{
-    height:100px;
-    width: 350px;
-  }
-  .portfolio-header{
-	  height:25%;
-  }
-}
-.mdl-layout__content{
-	margin-top:10px;
-}
-.mdl-tabs__tab-bar{
-	border-bottom:none;
-}
-.mdl-tabs__tab-bar > a{
-	color:#FFFFFF !important;
-      border-style: solid;
-      border-color: white;
-      border-width: 0 3px;
-}
-.mdl-tabs__tab-bar > a:hover{
-  background-color: rgba(104,59,183,0.4);
-  /*background-color: rgba(225,0,210,0.2);*/
+.purple-text.accent-2{
+	color:#ea25ee !important;
 }
 
-
-.mdl-tabs__tab-bar .is-active{
-	/* border:1px solid white; */
-	background-color: rgba(104,59,183,0.2);
-      /*border-color: #683BB7;*/
-
+.input-field{
+  margin-bottom: 20px;
 }
-.mdl-tabs__panel{
-	margin-top:50px;
+
+/* Form Color */
+
+/* label color */
+.input-field label {
+ color: white;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field textarea[id=message]:focus + label {
+ color: #D1C4E9;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus ,
+.input-field input[type=email]:focus,
+.input-field textarea[id=message]:focus{
+ border-bottom: 1px solid #D1C4E9;
+ box-shadow: 0 1px 0 0 #D1C4E9;
+}
+/* valid color */
+.input-field input[type=text].valid,
+.input-field input[type=email].valid ,
+.input-field textarea[id=message].valid{
+ border-bottom: 1px solid #E040FB;
+ box-shadow: 0 1px 0 0 #E040FB;
+}
+/* invalid color */
+.input-field input[type=text].invalid,
+.input-field input[type=email].invalid ,
+.input-field textarea[id=message].invalid{
+ border-bottom: 1px solid #D32F2F;
+ box-shadow: 0 1px 0 0 #D32F2F;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+	color: #ea25ee;
+}
+
+/* submit button */
+.input-field button[type=submit]{
+	/* background-color:#673ab7; */
+	background-color:#bb0ebe;
+}
+.input-field button[type=submit]:hover{
+	/* background-color:#9575cd; */
+	background-color:#e912ed;
+}
+
+.details-list li{
+    opacity:0;
+}
+
+.collapsible-header{
+    background: transparent;
 }
 
 
