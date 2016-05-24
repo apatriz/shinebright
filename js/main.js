@@ -11,5 +11,7 @@ $(document).ready(function () {
     ];
     Materialize.scrollFire(options);
     
+    //fade in about me section
+    
   
 });
